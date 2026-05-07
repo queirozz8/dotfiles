@@ -1,0 +1,117 @@
+/* ============================================
+   Vesper Theme for Rofi
+   Inspired by raunofreiberg/vesper
+   ============================================ */
+
+* {
+    /* --- Paleta Vesper --- */
+    bg:          #101010;
+    bg-alt:      #1a1a1a;
+    bg-select:   #252525;
+    border-col:  #ebb58c;
+    fg:          #FFFFFF;
+    fg-dim:      #888888;
+    accent:      #ebb58c;
+    urgent:      #FF6B6B;
+
+    /* Reset padrão do Rofi */
+    background-color: transparent;
+    text-color:       @fg;
+    border:           0;
+    margin:           0;
+    padding:          0;
+    spacing:          0;
+}
+
+/* --- Janela principal --- */
+window {
+    background-color: @bg;
+    border:           2px solid;
+    border-color:     @border-col;
+    border-radius:    10px;
+    width:            560px;
+    padding:          16px;
+}
+
+/* --- Caixa de pesquisa --- */
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          12px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    6px;
+    padding:          10px 14px;
+    spacing:          8px;
+    children:         [ entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @accent;
+    font:             "JetBrains Mono Bold 11";
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @fg;
+    placeholder:      "Search...";
+    placeholder-color: @fg-dim;
+    font:             "JetBrains Mono 11";
+    cursor:           text;
+}
+
+/* --- Lista de itens --- */
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            8;
+    spacing:          4px;
+    scrollbar:        false;
+    cycle:            true;
+}
+
+element {
+    background-color: transparent;
+    border-radius:    6px;
+    padding:          8px 12px;
+    spacing:          10px;
+    children:         [ element-icon, element-text ];
+    orientation:      horizontal;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element normal.urgent {
+    background-color: transparent;
+    text-color:       @urgent;
+}
+
+element selected.normal {
+    background-color: @bg-select;
+    text-color:       @accent;
+}
+
+element selected.urgent {
+    background-color: @bg-select;
+    text-color:       @urgent;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             22px;
+    vertical-align:   0.5;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    font:             "JetBrains Mono 11";
+    vertical-align:   0.5;
+    highlight:        bold;
+}

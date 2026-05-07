@@ -1,0 +1,243 @@
+/* ── Rick's SwayNC Style — Vesper ── */
+
+@define-color noti-bg       rgba(16, 16, 16, 0.92);
+@define-color noti-bg-alt   rgba(22, 22, 22, 0.95);
+@define-color noti-bg-hover rgba(255, 166, 87, 0.07);
+@define-color text-color    #e8e8e8;
+@define-color text-dim      #666666;
+@define-color border-color  #2a2a2a;
+@define-color accent        #FFA657;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* ── Painel principal ── */
+
+.control-center {
+  background: @noti-bg;
+  border: 1px solid @border-color;
+  border-radius: 12px;
+  color: @text-color;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.4;
+  color: @text-dim;
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+.blank-window {
+  background: alpha(black, 0.15);
+}
+
+/* ── Notificações individuais ── */
+
+.notification-row {
+  outline: none;
+}
+
+.control-center .notification-row:hover {
+  opacity: 1;
+  background: @noti-bg-hover;
+  border-radius: 10px;
+}
+
+.notification {
+  background: @noti-bg-alt;
+  padding: 4px 10px 4px 6px;
+  border-radius: 10px;
+  border: 1px solid @border-color;
+  color: @text-color;
+}
+
+.notification-default-action {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.notification-default-action:hover {
+  background: @noti-bg-hover;
+  color: @text-color;
+}
+
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.notification-action {
+  border: 1px solid @border-color;
+  border-top: none;
+  border-radius: 10px;
+  background: @noti-bg-alt;
+  color: @text-color;
+}
+
+.notification-action:hover {
+  background: @noti-bg-hover;
+  color: @text-color;
+}
+
+.notification-action:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.notification-action:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* ── Botão de fechar ── */
+
+.close-button {
+  background: rgba(255, 166, 87, 0.15);
+  color: @accent;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border: none;
+}
+
+.close-button:hover {
+  background: @accent;
+  color: #101010;
+  transition: all 0.15s ease-in-out;
+}
+
+/* ── Conteúdo da notificação ── */
+
+.summary {
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent;
+  color: @text-color;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 11px;
+  font-weight: 400;
+  background: transparent;
+  color: @text-dim;
+  text-shadow: none;
+  margin-right: 18px;
+}
+
+.body {
+  font-size: 12px;
+  font-weight: 400;
+  background: transparent;
+  color: @text-dim;
+  text-shadow: none;
+}
+
+.body-image {
+  margin-top: 6px;
+  border-radius: 8px;
+}
+
+/* ── Inline reply ── */
+
+.inline-reply {
+  margin-top: 8px;
+}
+
+.inline-reply-entry {
+  background: @noti-bg;
+  color: @text-color;
+  caret-color: @accent;
+  border: 1px solid @border-color;
+  border-radius: 8px;
+}
+
+.inline-reply-button {
+  margin-left: 4px;
+  background: @noti-bg;
+  border: 1px solid @border-color;
+  border-radius: 8px;
+  color: @text-color;
+  font-size: 11px;
+}
+
+.inline-reply-button:hover {
+  background: @noti-bg-hover;
+}
+
+.inline-reply-button:disabled {
+  background: transparent;
+  color: @text-dim;
+  border: 1px solid transparent;
+}
+
+/* ── Title (header "Notifications" + botão Clear) ── */
+
+.widget-title {
+  color: @text-color;
+  background: transparent;
+  padding: 6px 8px 4px 8px;
+  margin: 6px 6px 2px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  border-bottom: 1px solid @border-color;
+}
+
+.widget-title > button {
+  font-size: 11px;
+  color: @text-dim;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid @border-color;
+  padding: 2px 8px;
+}
+
+.widget-title > button:hover {
+  background: rgba(255, 166, 87, 0.1);
+  color: @accent;
+  border-color: @accent;
+}
+
+/* ── Volume ── */
+
+.widget-volume {
+  background: @noti-bg-alt;
+  padding: 6px 10px;
+  margin: 6px 6px 4px 6px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: @text-color;
+  border: 1px solid @border-color;
+}
+
+.widget-volume > box > button {
+  background: transparent;
+  border: none;
+  color: @accent;
+}
+
+.per-app-volume {
+  background: @noti-bg;
+  padding: 4px 8px 8px;
+  margin: 0 8px 8px;
+  border-radius: 10px;
+  color: @text-color;
+}
+
+/* ── Buttons grid (bluetooth) ── */
+
+.widget-buttons-grid {
+  padding: 4px;
+  margin: 4px 6px;
+  border-
