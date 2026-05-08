@@ -2,10 +2,10 @@
 
 My personal dotfiles for Hyprland on Fedora 41, managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
-![Ricing image](./hyprlock.png)
-![Ricing image](./workspace_1.png)
-![Ricing image](./workspace_1_other.png)
-![Ricing image](./clean_workspace.png)
+![Ricing image](./assets/hyprlock.png)
+![Ricing image](./assets/workspace_1.png)
+![Ricing image](./assets/workspace_1_other.png)
+![Ricing image](./assets/clean_workspace.png)
 
 ---
 
