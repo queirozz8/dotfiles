@@ -1,1 +1,39 @@
-/home/rick/.config/waybar/configs/[TOP] Default
+/* ---- Rick's Waybar Config ---- */
+{
+    "include": [
+        "$HOME/.config/waybar/Modules",
+        "$HOME/.config/waybar/ModulesWorkspaces",
+        "$HOME/.config/waybar/ModulesCustom",
+        "$HOME/.config/waybar/ModulesGroups",
+        "$HOME/.config/waybar/UserModules"
+        ],
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "spacing": 4,
+    "fixed-center": true,
+    "ipc": true,
+    "margin-top": 6,
+    "margin-left": 12,
+    "margin-right": 12,
+    
+    "modules-left": [
+        "custom/cava_mviz",
+        "custom/separator#blank",
+        "custom/playerctl"
+        ],
+    
+    "modules-center": [
+        "hyprland/workspaces#numbers"
+        ],
+    
+    "modules-right": [
+        "pulseaudio",
+        "custom/separator#blank",
+        "custom/swaync",
+        "custom/separator#blank",
+        "clock#4",
+        "custom/power"
+        ]
+    }
