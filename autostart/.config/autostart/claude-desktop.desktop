@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Claude
+Exec=claude-desktop
+Icon=claude-desktop
+StartupWMClass=Claude
+Terminal=false
+X-GNOME-Autostart-enabled=true

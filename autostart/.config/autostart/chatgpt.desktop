@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ChatGPT
+Comment=Open ChatGPT as a PWA
+Exec=brave-browser --app=https://chatgpt.com
+Icon=chatgpt
+Terminal=false
+Categories=Network;Office;
+StartupNotify=true

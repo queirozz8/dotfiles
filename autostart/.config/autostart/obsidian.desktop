@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=flatpak run md.obsidian.Obsidian
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Obsidian
