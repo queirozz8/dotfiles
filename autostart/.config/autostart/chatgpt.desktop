@@ -4,7 +4,7 @@ Version=1.0
 Type=Application
 Name=ChatGPT
 Comment=Open ChatGPT as a PWA
-Exec=brave-browser --app=https://chatgpt.com
+Exec=brave-browser --app=https://chatgpt.com & disown
 Icon=chatgpt
 Terminal=false
 Categories=Network;Office;
