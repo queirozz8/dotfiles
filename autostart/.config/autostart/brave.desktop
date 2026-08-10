@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=brave-browser
+Exec=brave-browser & disown
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
