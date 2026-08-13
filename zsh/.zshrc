@@ -117,3 +117,15 @@ export PATH=$PATH:/home/rick/.spicetify
 
 # Sempre abrir o Tux quando eu inicializo o Terminal
 tux
+
+# pnpm
+export PNPM_HOME="/home/rick/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/rick/.local/bin:$PATH"
