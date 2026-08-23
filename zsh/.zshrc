@@ -129,3 +129,6 @@ esac
 
 # Added by Antigravity CLI installer
 export PATH="/home/rick/.local/bin:$PATH"
+
+# kimi-code
+export PATH="/home/rick/.kimi-code/bin:$PATH"
