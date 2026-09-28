@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Exec=cursor
-Hidden=false
+Hidden=true
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
 Name=Cursor

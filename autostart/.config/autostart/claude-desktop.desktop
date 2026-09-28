@@ -1,7 +1,8 @@
 [Desktop Entry]
 Type=Application
+Hidden=true
 Name=Claude
-Exec=claude-desktop & disown
+Exec=claude-desktop
 Icon=claude-desktop
 StartupWMClass=Claude
 Terminal=false
