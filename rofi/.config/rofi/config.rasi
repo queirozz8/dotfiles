@@ -4,10 +4,10 @@ configuration {
     icon-theme:     "Papirus-Dark";
     terminal:       "kitty";
     drun-display-format: "{name}";
-    display-drun:   " Apps";
+    display-drun: "";
     display-run:    " Run";
     display-window: " Windows";
-    font:           "JetBrains Mono 11";
+    font:           "JetBrains Mono 12";
 }
 
-@theme "~/.config/rofi/themes/vesper.rasi"
+@theme "~/.config/rofi/themes/darkmatter.rasi"

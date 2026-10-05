@@ -1,12 +1,12 @@
-/* ── Rick's SwayNC Style — Vesper ── */
+/* Darkmatter palette for SwayNC. */
 
-@define-color noti-bg       rgba(16, 16, 16, 0.92);
-@define-color noti-bg-alt   rgba(22, 22, 22, 0.95);
-@define-color noti-bg-hover rgba(255, 166, 87, 0.07);
-@define-color text-color    #e8e8e8;
-@define-color text-dim      #666666;
-@define-color border-color  #2a2a2a;
-@define-color accent        #FFA657;
+@define-color noti-bg       rgba(18, 17, 19, 0.92);
+@define-color noti-bg-alt   rgba(28, 27, 29, 0.95);
+@define-color noti-bg-hover rgba(231, 138, 83, 0.08);
+@define-color text-color    #c1c1c1;
+@define-color text-dim      #888888;
+@define-color border-color  #2b2b2b;
+@define-color accent        #e78a53;
 
 * {
   font-family: "JetBrainsMono Nerd Font", monospace;
@@ -100,7 +100,7 @@
 /* ── Botão de fechar ── */
 
 .close-button {
-  background: rgba(255, 166, 87, 0.15);
+  background: rgba(231, 138, 83, 0.16);
   color: @accent;
   text-shadow: none;
   padding: 0;
@@ -112,7 +112,7 @@
 
 .close-button:hover {
   background: @accent;
-  color: #101010;
+  color: #121113;
   transition: all 0.15s ease-in-out;
 }
 
@@ -204,7 +204,7 @@
 }
 
 .widget-title > button:hover {
-  background: rgba(255, 166, 87, 0.1);
+  background: rgba(231, 138, 83, 0.1);
   color: @accent;
   border-color: @accent;
 }

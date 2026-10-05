@@ -1,4 +1,4 @@
-/* ---- Rick's Waybar Style — Vesper-inspired ---- */
+/* Darkmatter palette for Waybar, adapted from darkmatter-linux. */
 
 @import "wallust/colors-waybar.css";
 
@@ -11,33 +11,29 @@
 }
 
 window#waybar {
-  background-color: rgba(16, 16, 16, 0.82);
-  color: #e8e8e8;
+  background-color: rgba(18, 17, 19, 0.92);
+  color: #ffffff;
   border-radius: 12px;
 }
 
-/* ── Left ── */
-
 #custom-cava_mviz {
-  color: #F7CC8D;
+  color: #e78a53;
   letter-spacing: 1px;
   padding: 0 6px;
 }
 
 #custom-playerctl {
-  color: #a0a0a0;
+  color: #aaaaaa;
   padding: 0 8px;
   font-style: normal;
 }
-
-/* ── Center ── */
 
 #workspaces {
   padding: 0 4px;
 }
 
 #workspaces button {
-  color: #545454;
+  color: #888888;
   background: transparent;
   padding: 0;
   margin: 3px 2px;
@@ -47,48 +43,45 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #e8e8e8;
-  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 #workspaces button.active {
-  color: #f5c06f;
-  background: rgba(245, 192, 111, 0.1);
+  color: #121113;
+  background: #e78a53;
 }
 
 #workspaces button.occupied {
-  color: #888888;
+  color: #c1c1c1;
 }
 
-/* ── Right ── */
+#pulseaudio,
+#custom-swaync,
+#clock {
+  color: #ffffff;
+}
 
-#pulseaudio {
-  color: #e8e8e8;
+#pulseaudio,
+#custom-swaync {
   padding: 0 10px;
 }
 
 #pulseaudio.muted {
-  color: #545454;
-}
-
-#custom-swaync {
-  color: #e8e8e8;
-  padding: 0 10px;
+  color: #888888;
 }
 
 #clock {
-  color: #e8e8e8;
   padding: 0 12px;
   font-weight: 500;
 }
 
 #custom-power {
   padding-right: 12px;
+  color: #fbcb97;
 }
 
-/* ── Separadores ── */
-
 #custom-separator {
-  color: #2a2a2a;
+  color: #333333;
   padding: 0 2px;
 }

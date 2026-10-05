@@ -4,8 +4,8 @@
 
 window,
 .background {
-    background-color: rgba(10, 10, 10, 0.92);
-    color: #e8e3da;
+    background-color: rgba(18, 17, 19, 0.92);
+    color: #c1c1c1;
 }
 
 box {
@@ -18,9 +18,9 @@ button {
     padding: 16px 14px 16px 14px;
     margin: 6px;
     border-radius: 6px;
-    border: 1px solid rgba(255, 199, 153, 0.12);
-    background-color: rgba(30, 28, 26, 0.65);
-    color: #e8e3da;
+    border: 1px solid rgba(43, 43, 43, 0.9);
+    background-color: rgba(28, 27, 29, 0.86);
+    color: #c1c1c1;
     font-size: 14px;
     font-weight: 500;
 }
@@ -36,17 +36,17 @@ button {
 }
 
 button:hover {
-    background-color: rgba(255, 199, 153, 0.09);
-    border-color: rgba(255, 199, 153, 0.55);
-    color: #ffc799;
+    background-color: rgba(231, 138, 83, 0.09);
+    border-color: rgba(231, 138, 83, 0.55);
+    color: #e78a53;
 }
 
 button:focus {
-    background-color: rgba(255, 199, 153, 0.06);
-    border-color: rgba(255, 199, 153, 0.5);
-    color: #ffc799;
+    background-color: rgba(231, 138, 83, 0.06);
+    border-color: rgba(231, 138, 83, 0.5);
+    color: #e78a53;
 }
 
 button:active {
-    background-color: rgba(255, 199, 153, 0.15);
+    background-color: rgba(231, 138, 83, 0.15);
 }
