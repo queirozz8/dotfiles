@@ -26,7 +26,7 @@
 
     background-color:   transparent;
     text-color:         @dm-subtle;
-    accent-color:       @dm-orange;
+    accent-color:       @dm-dim;
 
     margin:     0px;
     padding:    0px;
