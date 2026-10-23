@@ -28,4 +28,10 @@ sudo -v
 sudo journalctl --vacuum-time=14d
 sudo dnf clean all
 
+if command -v docker >/dev/null 2>&1 && timeout 5 docker info >/dev/null 2>&1; then
+  docker builder prune --all --force
+else
+  printf 'Docker indisponível; cache de build não foi alterado.\n'
+fi
+
 df -h "$HOME"
