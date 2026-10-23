@@ -112,6 +112,7 @@ alias ip-publico-ipv4="curl -s checkip.amazonaws.com"
 alias ip-publico-ipv6="curl -6 ifconfig.me"
 alias ip-privado="ip a"
 alias tux="cowsay -f tux 'oooooopa, tranquilo?'"
+alias limpar-disco="$HOME/bin/disk-cleanup.sh"
 
 export PATH=$PATH:/home/rick/.spicetify
 

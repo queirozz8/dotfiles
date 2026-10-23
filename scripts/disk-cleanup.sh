@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Remove apenas dados recriáveis do cache do usuário e limita journals antigos.
+# Feche os navegadores antes de executar para liberar o máximo de espaço.
+
+remove_cache_contents() {
+  local path="$1"
+  if [[ -d "$path" ]]; then
+    find "$path" -mindepth 1 -maxdepth 1 -delete
+    printf 'Limpo: %s\n' "$path"
+  fi
+}
+
+for path in \
+  "$HOME/.cache/BraveSoftware/Brave-Browser/Default/Cache" \
+  "$HOME/.cache/BraveSoftware/Brave-Browser/Default/Code Cache" \
+  "$HOME/.cache/BraveSoftware/Brave-Origin/Default/Cache" \
+  "$HOME/.cache/BraveSoftware/Brave-Origin/Default/Code Cache" \
+  "$HOME/.cache/mozilla/firefox" \
+  "$HOME/.cache/thumbnails" \
+  "$HOME/.cache/pip" \
+  "$HOME/.cache/libdnf5"; do
+  remove_cache_contents "$path"
+done
+
+sudo -v
+sudo journalctl --vacuum-time=14d
+sudo dnf clean all
+
+df -h "$HOME"
